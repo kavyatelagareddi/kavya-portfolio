@@ -5,7 +5,7 @@ function openModal(project) {
 
   if (project === "stock") {
     title.innerText = "Stock Price Prediction Web Application";
-    image.src = "assets/stock.png";
+    image.src = "stock.png";
 
     body.innerHTML = `
       <h3>Project Overview</h3>
@@ -39,7 +39,7 @@ function openModal(project) {
 
   else if (project === "inventory") {
   title.innerText = "Smart Stock Inventory Optimization for Retail Stores";
-  image.src = "assets/inventory.png";
+  image.src = "inventory.png";
 
   body.innerHTML = `
     <h3>Project Overview</h3>
@@ -80,7 +80,7 @@ function openModal(project) {
 
   else if (project === "maze") {
     title.innerText = "Interactive Maze Solver & Visualizer";
-    image.src = "assets/maze.png";
+    image.src = "maze.png";
 
     body.innerHTML = `
       <h3>Project Overview</h3>
@@ -136,3 +136,4 @@ document.getElementById("projectModal").addEventListener("click", function (e) {
     closeModal();
   }
 });
+
