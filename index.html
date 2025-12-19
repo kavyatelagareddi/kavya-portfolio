@@ -1,32 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kavya | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kavya Telagareddi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <nav>
-    <h2>Kavya</h2>
+<!-- ================= NAVBAR ================= -->
+<nav>
+  <h2>Kavya</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <h1>Hi, I'm Kavya Telagareddi</h1>
+  <p>Computer Science Undergraduate @ NIT Andhra Pradesh</p>
+  <p>Software Engineering & AI/ML Enthusiast</p>
+
+  <div class="hero-buttons">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="assets/resume.pdf" target="_blank" class="btn outline">Resume</a>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a motivated Computer Science undergraduate at NIT Andhra Pradesh with a
+    solid academic foundation and a strong interest in Software Development and AI/ML.
+    I enjoy applying computer science fundamentals to build practical, real-world solutions.
+  </p>
+
+  <p>
+    Through projects and internships, I have gained hands-on experience in Python,
+    machine learning, and web technologies, and I am continuously working to
+    strengthen both my technical and analytical skills.
+  </p>
+</section>
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Machine Learning Intern</h3>
+    <p><b>Organization:</b> Infosys Springboard</p>
+    <p><b>Duration:</b> sep 2025-nov 2025</p>
+
+    <p>
+      Worked on a real-world retail use case to design and implement a
+      demand forecasting and inventory optimization system. Focused on
+      analyzing historical sales data, building predictive models, and
+      generating insights to support inventory planning decisions.
+    </p>
+
+    <div class="tags">
+      <span>Python</span>
+      <span>Machine Learning</span>
+      <span>Time-Series Forecasting</span>
+      <span>Data Analysis</span>
+      <span>Streamlit</span>
+      <span>Retail Analytics</span>
+    </div>
+
+    <a href="https://github.com/kavyatelagareddi/smart-stock-inventory-optimization-for-retail-stores"
+       target="_blank"
+       class="btn">
+       View Work
+    </a>
+  </div>
+</section>
+
+
+
+
+<!-- ================= PROJECTS ================= -->
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card project-card">
+  <img src="assets/stock.png" alt="Stock Price Prediction" class="project-img" />
+
+  <h3>Stock Price Prediction Web Application</h3>
+
+  <p>
+    Built a machine learning–based web application to predict stock prices using
+    LSTM and GRU models, with real-time data visualization through a Flask interface.
+  </p>
+
+  <div class="tags">
+    <span>Python</span>
+    <span>Machine Learning</span>
+    <span>LSTM</span>
+    <span>GRU</span>
+    <span>Flask</span>
+    <span>yfinance</span>
+  </div>
+
+  <button class="btn" onclick="openModal('stock')">More Details</button>
+</div>
+
+
+    
+
+    <div class="card project-card">
+  <img src="assets/maze.png" alt="Maze Solver Visualization" class="project-img" />
+
+  <h3>Interactive Maze Solver & Visualizer</h3>
+
+  <p>
+    Built an interactive maze visualizer that generates mazes using multiple
+    algorithms and solves them using pathfinding techniques like BFS, Dijkstra,
+    and A*, with real-time step-by-step visualization.
+  </p>
+
+  <div class="tags">
+    <span>JavaScript</span>
+    <span>Algorithms</span>
+    <span>BFS</span>
+    <span>Dijkstra</span>
+    <span>A*</span>
+    <span>Maze Generation</span>
+    <span>Visualization</span>
+  </div>
+
+  <button class="btn" onclick="openModal('maze')">More Details</button>
+</div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-group">
+    <h3>Programming Languages</h3>
+    <div class="skills">
+      <span>Python</span>
+      <span>C++</span>
+      <span>Java</span>
+      <span>JavaScript</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <h3>Core Computer Science</h3>
+    <div class="skills">
+      <span>Data Structures & Algorithms</span>
+      <span>Object-Oriented Programming</span>
+      <span>DBMS</span>
+      <span>Operating Systems</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <h3>Machine Learning & Data</h3>
+    <div class="skills">
+      <span>Machine Learning</span>
+      <span>Time-Series Analysis</span>
+      <span>LSTM</span>
+      <span>GRU</span>
+      <span>TensorFlow</span>
+      <span>scikit-learn</span>
+      <span>Pandas</span>
+      <span>NumPy</span>
+    </div>
+  </div>
+
+  <div class="skills-group">
+    <h3>Web & Tools</h3>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Flask</span>
+      <span>Git & GitHub</span>
+    </div>
+  </div>
+
+  
+  </div>
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>National Institute of Technology, Andhra Pradesh</h3>
+    <p><b>B.Tech in Computer Science and Engineering</b></p>
+    <p>2024 – 2027</p>
+    <p><b>CGPA:</b> 8.44</p>
+  </div>
+
+  <div class="card">
+    <h3>Sri Chaitanya College, BIEAP</h3>
+    <p><b>Higher Secondary Education (PCM)</b></p>
+    <p>2023 – 2024</p>
+    <p><b>CGPA:</b> 9.82</p>
+  </div>
+
+  <div class="card">
+    <h3>Sri Chaitanya School, BSEAP</h3>
+    <p><b>Secondary School Certificate (SSC)</b></p>
+    <p>2021 – 2023</p>
+    <p><b>CGPA:</b> 10.0</p>
+  </div>
+</section>
+
+<!------leadership-->
+<section id="leadership">
+  <h2>Leadership & Extracurriculars</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Joint Secretary</h3>
+      <p><b>Coding Club – NIT Andhra Pradesh</b></p>
+      <p><span class="badge">2025 – Present</span></p>
+      <p>
+        Organized coding workshops and hackathons.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Joint Secretary</h3>
+      <p><b>CSEA – NIT Andhra Pradesh</b></p>
+      <p><span class="badge">2025 – Present</span></p>
+      <p>
+       actively contributing to technical skill development and peer learning within the department.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Teaching Assistant</h3>
+      <p><b>National Institute of Technology, Andhra Pradesh</b></p>
+      <p><span class="badge">Sep 2025 – Dec 2025</span></p>
+      <p>
+        Assisted faculty during lab sessions, clarified student doubts.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Team Lead</h3>
+      <p><b>Hackathons (SIH 2024, GROMOAI)</b></p>
+      <p><span class="badge">2024</span></p>
+      <p>
+         Guided project development,
+        task distribution, and ensured timely completion of solutions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>PR & Hospitality Lead</h3>
+      <p><b>Vulcanzy Fest – NIT Andhra Pradesh</b></p>
+      <p><span class="badge">2024</span></p>
+      <p>
+        Handled communication,
+        and coordinated logistics for 100+ participants during the fest.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+
+  <p>
+    I’m open to internship opportunities, collaborations, and learning-focused
+    roles in software development and AI/ML.
+  </p>
+
+  <p><b>Email:</b> <a href="mailto:kavyatelagareddi@gmail.com">kavyatelagareddi@gmail.com</a></p>
+
+  <p>
+    <a href="https://github.com/kavyatelagareddi" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/kavya-telagareddi/" target="_blank">LinkedIn</a>
+  </p>
+</section>
+
+
+
+
+<!-- ================= JS ================= -->
+<script src="script.js"></script>
+<!-- ========== STOCK PREDICTION MODAL ========== -->
+<div id="stockModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('stockModal')">&times;</span>
+
+    <h2>Stock Price Prediction Web Application</h2>
+
+    <img src="assets/stock_prediction.png" alt="Stock Prediction"
+         style="width:100%; border-radius:10px; margin:20px 0;" />
+
+    <h3>Project Overview</h3>
+    <p>
+      A machine learning–based web application that predicts next-day stock prices
+      using historical market data. The system compares LSTM and GRU models and
+      provides visual insights through an interactive Flask interface.
+    </p>
+
+    <h3>Key Features</h3>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li>Supports multiple Indian stocks (NSE)</li>
+      <li>Time-series prediction using LSTM and GRU models</li>
+      <li>Historical price visualization using Matplotlib</li>
+      <li>Web interface built with Flask</li>
     </ul>
-  </nav>
 
-  <section class="hero">
-    <h1>Hi, I'm Kavya 👋</h1>
-    <p>Computer Science Student | NIT Andhra Pradesh</p>
-  </section>
+    <h3>Machine Learning Approach</h3>
+    <ul>
+      <li>Sliding window time-series dataset (60-day lookback)</li>
+      <li>MinMax scaling for data normalization</li>
+      <li>80–20 train-test split</li>
+      <li>Evaluation using RMSE and MAPE</li>
+    </ul>
 
-  <section id="about"><h2>About</h2></section>
-  <section id="projects"><h2>Projects</h2></section>
-  <section id="skills"><h2>Skills</h2></section>
-  <section id="contact"><h2>Contact</h2></section>
+    <h3>Tech Stack</h3>
+    <ul>
+      <li>Python, TensorFlow (Keras)</li>
+      <li>Flask, yfinance</li>
+      <li>Pandas, NumPy, scikit-learn</li>
+      <li>Matplotlib</li>
+    </ul>
+
+  </div>
+</div>
 
 </body>
 </html>
+<!-- ================= DYNAMIC PROJECT MODAL ================= -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+
+    <span class="close-btn" onclick="closeModal()">×</span>
+
+    <h2 id="modal-title"></h2>
+
+    <img id="modal-image"
+         style="width:100%; border-radius:10px; margin:20px 0;" />
+
+    <div id="modal-body"></div>
+
+  </div>
+</div>
